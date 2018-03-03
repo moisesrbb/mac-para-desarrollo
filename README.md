@@ -124,19 +124,19 @@ brewup
 ```
 
 ### Mac App Store command line interface
-Instalemos nuestro primera aplicación con Hombrew, Mac App Store command line interface nos ayudara a instalar aplicaciones de la Mac Apps Store desde línea de comando.
+Instalemos nuestra primera aplicación con Hombrew, Mac App Store command line interface es una aplicación que nos ayudara a re-instalar las aplicaciones de la Mac App Store que hallamos comprado anteriormente, desde línea de comando.
 
 ```shell
 brew install mas
 ```
 
-Para poder comanzar a usarla necesitamos primer loguearnos, usa el siguiente comando:
+Para poder comenzar a usar **mas-cli** necesitamos primero _iniciar sesión_, usando el siguiente comando:
 
 ```shell
 mas signin correo_con_que_registraste_tu_apple_id@email.com
 ```
 
-Una vez que hayas iniciado sesión podemos instalar nuestras primeras aplicaciones con **mas**
+Una vez que hallas iniciado sesión, ya podemos re-instalar nuestras aplicaciones con **mas-cli**
 
 ```shell
 #instalar Pages
@@ -147,4 +147,4 @@ mas install 409203825
 mas install 409183694
 ```
 
-Para más información de como usar _mas_ visita su [página oficial](https://github.com/mas-cli/mas).
+Para más información de como usar **mas-cli** visita su [página oficial](https://github.com/mas-cli/mas).
