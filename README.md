@@ -134,3 +134,16 @@ Para poder comanzar a usarla necesitamos primer loguearnos, usa el siguiente com
 ```shell
 mas signin correo_con_que_registraste_tu_apple_id@email.com
 ```
+
+Una vez que hayas iniciado sesión podemos instalar nuestras primeras aplicaciones con **mas**
+
+```shell
+#instalar Pages
+mas install 409201541
+#instalar Numbers
+mas install 409203825
+#instalar Keynote
+mas install 409183694
+```
+
+Para más información de como usar [mas](https://github.com/mas-cli/mas) visita su página oficial.
