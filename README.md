@@ -100,3 +100,11 @@ Homebrew es un manejador de paquetes que nos ayudara a instalar algunas de las h
 ```shell
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
+
+Lo siguiente es indicarle al sistema que use las versiones de las aplicaciones instaladas por Homebrew, para esto necesitamos agregar la siguiente línea en el PATH de tu _.bash_profile_
+
+```shell
+export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
+# ó ejecuta lo siguiente si aún no has creado tu archivo _.bash_profile_
+echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
+```
