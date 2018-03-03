@@ -53,25 +53,25 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 ### Mantenlos limpios
 
 ```shell
-**Evita la creación de archivos duplicados y .DS_Store en volumenes de red**
+# Evita la creación de archivos duplicados y .DS_Store en volumenes de red
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
-**Evita la creación de archivos duplicados y .DS_Store en dispositivos USB**
+# Evita la creación de archivos duplicados y .DS_Store en dispositivos USB
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 ```
 
 ### Capturas de pantalla
 
 ```shell
-**Guardar capturas en un directorio predetreminado, en mi caso "screenshots"**
+# Guardar capturas en un directorio predetreminado, en mi caso "screenshots"
 mkdir ~/screenshots
 defaults write com.apple.screencapture location ~/Desktop/screenshots/ && \
 killall SystemUIServer
 
-**Establecer un formato: png, jpg, jpeg, gif, pdf o tiff **
+# Establecer un formato: png, jpg, jpeg, gif, pdf o tiff
 defaults write com.apple.screencapture type -string "png"
 
-**Deshabilita sombras en las capturas**
+# Deshabilita sombras en las capturas
 defaults write com.apple.screencapture disable-shadow -bool true && \
 killall SystemUIServer
 ```
