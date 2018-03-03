@@ -143,8 +143,10 @@ Una vez que hallas iniciado sesión, ya podemos re-instalar nuestras aplicacione
 ```shell
 #instalar Pages
 mas install 409201541
+
 #instalar Numbers
 mas install 409203825
+
 #instalar Keynote
 mas install 409183694
 ```
