@@ -1,5 +1,5 @@
 # Configurar una Mac para desarrollo web
-Desde hace ya un tiempo que tengo una Mac mini y una Macbook Air y ha sido todo un reto encontrar la configuración adecuada para usar mi Mac para programar y crei que seria buena idea tomar algunas notas y compartirlas, pero sobre todo escribo esto para que no se me olvido a mí :D
+Desde hace ya un tiempo que tengo una Mac mini y una Macbook Air y ha sido todo un reto encontrar la configuración adecuada para usar mi Mac para programar y crei que seria buena idea tomar algunas notas y compartirlas, pero sobre todo escribo esto para que no se me olvide :D
 
 ## Contenido
 
