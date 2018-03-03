@@ -106,6 +106,7 @@ Lo siguiente es indicarle al sistema que use las versiones de las aplicaciones i
 
 ```shell
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
+
 # ó ejecuta lo siguiente si aún no has creado tu archivo _.bash_profile_
 echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
 ```
@@ -114,6 +115,7 @@ Antes de comenzar a usar Homebrew para instalar aplicaciones, agreguemos este al
 
 ```shell
 echo "alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'" >> ~/.bash_profile
+
 # ahora cargamos los cambios con
 source ~/.bash_profile
 ```
