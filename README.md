@@ -92,3 +92,4 @@ Homebrew es un manejador de paquetes que nos ayudara a instalar algunas de las h
 
 ´´´shell
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+´´´
