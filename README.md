@@ -25,7 +25,7 @@ chflags nohidden ~/Library
 
 ### Mostrar archivos ocultos
 
-Tambien puedes hacerlo presionando la tecla `command` + `shift` + `.`.
+Tambien puedes hacerlo presionando la tecla `command` + `shift` + `.`
 
 ```shell
 defaults write com.apple.finder AppleShowAllFiles YES
