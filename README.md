@@ -10,7 +10,7 @@ Desde hace ya un tiempo que tengo una Mac mini y una Macbook Air y ha sido todo 
 - **Seguridad y privacidad > Firewall >** Activar firewall
 - **Seguridad y privacidad > General >** Seleccionar "App Store y desarrolladores indentificados"
 - **Compartir > Compartir archivos** Deshabilitar
-- **Usuarios y groups > Arranque >** Spectacle, Flux
+- **Usuarios y groupos > Arranque >** Spectacle, Flux
 
 ### Mostrar la carpeta Librería
 
@@ -20,10 +20,9 @@ chflags nohidden ~/Library
 
 ### Mostrar archivos ocultos
 
-Tambien puedes hacerlo presionando la tecla `command` + `shift` + `.`
-
 ```shell
 defaults write com.apple.finder AppleShowAllFiles YES
+# ó presionando la tecla `command` + `shift` + `.`
 ```
 
 ### Mostrar la barra de path
