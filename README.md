@@ -108,3 +108,29 @@ export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 # ó ejecuta lo siguiente si aún no has creado tu archivo _.bash_profile_
 echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
 ```
+
+Antes de comenzar a usar Homebrew para instalar aplicaciones, agreguemos este alias a nuestro _.bash_profile_ que nos ayudara a darle el mantenimiento a nuestro Homebrew, sus formulas y las aplicaciones que hemos instalado
+
+```shell
+echo "alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'" >> ~/.bash_profile
+# ahora cargamos los cambios con
+source ~/.bash_profile
+```
+
+Y ahora actualizamos todas las formulas y aplicaciones de nuestro Homebrew
+```shell
+brewup
+```
+
+### Mac App Store command line interface
+Instalemos nuestro primera aplicación con Hombrew, Mac App Store command line interface nos ayudara a instalar aplicaciones de la Mac Apps Store desde línea de comando.
+
+```shell
+brew install mas
+```
+
+Para poder comanzar a usarla necesitamos primer loguearnos, usa el siguiente comando:
+
+```shell
+mas signin correo_con_que_registraste_tu_apple_id@email.com
+```
