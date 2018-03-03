@@ -90,6 +90,6 @@ xcode-select --install
 ## Homebrew
 Homebrew es un manejador de paquetes que nos ayudara a instalar algunas de las herramientas mas poderosas o necesarias que necesitaras usar desde la línea de comando. **Cask** es una extensión de Homebrew que nos permitira instalar aplicaciones de escritorio.
 
-´´´shell
+```shell
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-´´´
+```
