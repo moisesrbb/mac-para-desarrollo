@@ -81,7 +81,7 @@ killall SystemUIServer
 - **Safari > Preferencias > Avanzado >** Habilita "Mostrar el menú Desarrollo en la barra de menús"
 
 ## Xcode Command Line Tools
-Si aún no lo tienes, busca e instala desde la Mac Apps Store la versión mas reciente de Xcode. Necesitaras abrirlo al menos una vez para aceptar los terminos y condiciones antes de poder ejecutar los siguientes comandos. Abre una terminal y ejecuta:
+Si aún no lo tienes, busca e instala desde la **Mac Apps Store** la versión mas reciente de **Xcode**. Necesitaras abrirlo al menos una vez para aceptar los terminos y condiciones antes de poder ejecutar los siguientes comandos. Abre una terminal y ejecuta:
 
 ```shell
 xcode-select --install
