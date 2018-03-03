@@ -42,3 +42,25 @@ defaults write com.apple.finder ShowPathbar -bool true
 ```shell
 defaults write com.apple.finder ShowStatusBar -bool true
 ```
+
+### Mostrar las extensiones de los archivos
+
+```shell
+defaults write -g AppleShowAllExtensions -bool true
+```
+
+### Mostrar el path en la barra de titulo
+
+```shell
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+```
+
+### Mantenlos limpions
+
+```shell
+**Evita la creación de archivos duplicados y .DS_Store en volumenes de red
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+**Evita la creación de archivos duplicados y .DS_Store en dispositivos USB
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+```
