@@ -79,3 +79,16 @@ killall SystemUIServer
 - Abre Safari 
 - **Safari > Preferencias > General >** Deshabilita "Abrir archivos seguros al descargarlos"
 - **Safari > Preferencias > Avanzado >** Habilita "Mostrar el menú Desarrollo en la barra de menús"
+
+## Xcode Command Line Tools
+Si aún no lo tienes, busca e instala desde la Mac Apps Store la versión mas reciente de Xcode. Necesitaras abrirlo al menos una vez para aceptar los terminos y condiciones antes de poder ejecutar los siguientes comandos. Abre una terminal y ejecuta:
+
+```shell
+xcode-select --install
+```
+
+## Homebrew
+Homebrew es un manejador de paquetes que nos ayudara a instalar algunas de las herramientas mas poderosas o necesarias que necesitaras usar desde la línea de comando. **Cask** es una extensión de Homebrew que nos permitira instalar aplicaciones de escritorio.
+
+´´´shell
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
