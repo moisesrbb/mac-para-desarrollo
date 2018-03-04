@@ -120,7 +120,13 @@ echo "alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew do
 source ~/.bash_profile
 ```
 
-Y ahora actualizamos todas las formulas y aplicaciones de nuestro Homebrew
+Ahora instalamos **cask** que como ya comente, nos servira para instalar aplicaciones de escritorio.
+
+```shell
+brew tap caskroom/cask
+```
+
+Y ahora actualizamos todas las formulas y aplicaciones de nuestro Homebrew, para poder comenzar a utilizarlo, no es necesario pero siempre me gusta tener las versiones más nuevas.
 ```shell
 brewup
 ```
