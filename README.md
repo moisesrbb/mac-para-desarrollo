@@ -131,6 +131,45 @@ Y ahora actualizamos todas las formulas y aplicaciones de nuestro Homebrew, para
 brewup
 ```
 
+Hay dos formas de instalar aplicaciones usando **Brew**, la primera es con el siguiente comando:
+
+```shell
+brew cask install google-chrome
+```
+
+La segunda es creando un archivo y poniendo en el lista de aplicaciones que queremos instalar
+
+```shell
+touch ~/Brewfile
+```
+
+Y este seria el contenido de este archivo
+
+```shell
+cask 'firefox'
+cask 'dropbox'
+cask 'gimp'
+cask 'vlc'
+cask 'vagrant'
+cask 'vagrant-manager'
+cask 'virtualbox'
+cask 'font-source-code-pro'
+cask 'transmit'
+cask 'visual-studio-code'
+brew 'bash-completion'
+brew 'tree'
+cask 'flux'
+cask 'dash'
+cask 'kindle'
+cask 'steam'
+```
+
+Ahora ejecutamos el siguiente comando y esperamos mientras **Brew** instala todo por nosotros.
+
+```shell
+brew bundle install
+```
+
 ### Mac App Store command line interface
 Instalemos nuestra primera aplicación con Hombrew, Mac App Store command line interface es una aplicación que nos ayudara a re-instalar las aplicaciones de la Mac App Store que hallamos comprado anteriormente, desde línea de comando.
 
