@@ -131,19 +131,19 @@ Y ahora actualizamos todas las formulas y aplicaciones de nuestro Homebrew, para
 brewup
 ```
 
-Hay dos formas de instalar aplicaciones usando **Brew**, la primera es con el siguiente comando:
+Hay dos formas de instalar aplicaciones usando **Brew**, siguiente comando instala **Google Chrome**:
 
 ```shell
 brew cask install google-chrome
 ```
 
-La segunda es creando un archivo y poniendo en el lista de aplicaciones que queremos instalar
+La segunda es creando un archivo y poniendo en el, la lista de aplicaciones que queremos instalar
 
 ```shell
 touch ~/Brewfile
 ```
 
-Y este seria el contenido de este archivo
+Esta es la lista de aplicaciones que contiene mi archivo
 
 ```shell
 cask 'firefox'
