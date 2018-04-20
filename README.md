@@ -203,6 +203,82 @@ Para más información de como usar **mas-cli** visita su [página oficial](http
 
 ## Apache
 
+Apache esta pre-instalado en osx, lo primero seria detenerlo y desactivar que se ejecute de inicio.
+
+```shell
+sudo apachectl stop
+sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist 2>/dev/null
+```
+
+Luego instalamos **Apache** con **Brew**.
+
+```shell
+brew install httpd
+```
+
+Lo iniciamos usando el siguiente comando:
+
+```shell
+sudo brew services start httpd
+```
+
+Apache esta instalado y listo para usarse, visita **http://localhost:8080** para comprobarlo, deberas ver una página con un mensaje que dice algo como "It works!".
+
+Ahora configuramos Apache, abre el archivo **/usr/local/etc/httpd/httpd.conf** para cambiar algunos de los valores default a unos mas convenientes.
+
+```shell
+#Abrimos el archivo de configuración en el editor por default
+open -e /usr/local/etc/httpd/httpd.conf
+
+#en mi caso yo uso Visual Studio Code, asi que ejecuto el siguiente comando
+code /usr/local/etc/httpd/httpd.conf
+
+#Busca las siguientes líneas y reemplaza los valores para reflejar los siguientes:
+
+Listen 80
+
+DocumentRoot "/usr/local/var/www"
+
+DocumentRoot /Users/your_user/Sites
+
+#Busca el bloque <Directory> y reemplaza los dos siguientes valores
+
+<Directory /Users/your_user/Sites>
+
+# AllowOverride controls what directives may be placed in .htaccess files.
+# It can be "All", "None", or any combination of the keywords:
+#   AllowOverride FileInfo AuthConfig Limit
+#
+AllowOverride All
+
+#busca y descomenta las siguientes líneas
+LoadModule proxy_module libexec/mod_proxy.so
+LoadModule proxy_fcgi_module libexec/mod_proxy_fcgi.so
+LoadModule rewrite_module lib/httpd/modules/mod_rewrite.so
+
+User your_user
+Group staff
+
+#Busca #ServerName www.example.com:8080, descomentalo y dale el siguiente valor
+ServerName localhost
+```
+
+Notaras que estamos usando la carpeta Sites en tu home directory como DocumentRoot, necesitamos crear esta carpeta, una página de bienvenida y reinciar Apache para que estos cambios tomen efecto.
+
+```shell
+mkdir ~/Sites
+#creamos una página de bienvenida
+echo "<h1>Bienvenido!</h1>" > ~/Sites/index.html
+#reiniciamos Apache
+sudo apachectl -k restart
+```
+
+Visita **http://localhost** en tu navegador y todo debería funcionar correctamente. Si esto no te funciona, revisa los logs de Apache para ver que esta ocasionandote el problema.
+
+```shell
+tail -f /usr/local/var/log/httpd/error_log
+```
+
 ## PHP
 
 ## MariaDB
